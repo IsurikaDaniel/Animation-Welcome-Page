@@ -90,3 +90,28 @@ header .menu {
     opacity: 1;
     z-index: 10;
 }
+@keyframes showContent {
+
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+}
+
+.silder .list .item.active p:nth-child(1),
+.silder .list .item.active h2,
+.silder .list .item.active p:nth-child(3){
+
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.silder .list .item.active h2{
+    animation-duration: 1s;
+}
+.silder .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
