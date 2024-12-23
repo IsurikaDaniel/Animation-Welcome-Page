@@ -24,6 +24,11 @@ prev.onclick = function () {
     }
     showSlider();
 }
+
+//Auto run the slider 
+let refreshInterval = setInterval(() =>{
+    next.click();
+},3000)
 function showSlider() {
     //remove old item Active
     let oldItemActive = document.querySelector('.silder .list .item.active');
@@ -37,3 +42,9 @@ function showSlider() {
 }
 
 //click thumbnail
+thumbnails.forEach((thumbnali, index) =>{
+    thumbnali.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
+    })
+})
