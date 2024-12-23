@@ -68,7 +68,7 @@ header .menu {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #000 40%, transparent);
+    background-image: linear-gradient(to top, #000 30%, transparent);
 }
 .silder .list .item .content{
     position: absolute;
@@ -154,6 +154,7 @@ header .menu {
 }  */
 .thumbnali {
     position: absolute;
+    /* bottom: 20px; */
     top: calc(5% + 450px);
     left: 10%; 
     right: 10%; 
